@@ -1,0 +1,3 @@
+# Adsterra / AdSense ads.txt placeholder.
+# Add the exact seller record supplied by the ad network dashboard.
+# Do not invent or copy a publisher ID from another website.
