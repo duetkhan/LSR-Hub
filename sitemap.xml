@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://lsr-hub-portal.vercel.app/</loc></url>
+  <url><loc>https://lsr-hub-portal.vercel.app/tools.html</loc></url>
+  <url><loc>https://lsr-hub-portal.vercel.app/guides.html</loc></url>
+  <url><loc>https://lsr-hub-portal.vercel.app/blog.html</loc></url>
+  <url><loc>https://lsr-hub-portal.vercel.app/about.html</loc></url>
+  <url><loc>https://lsr-hub-portal.vercel.app/contact.html</loc></url>
+  <url><loc>https://lsr-hub-portal.vercel.app/privacy.html</loc></url>
+  <url><loc>https://lsr-hub-portal.vercel.app/terms.html</loc></url>
+  <url><loc>https://lsr-hub-portal.vercel.app/disclaimer.html</loc></url>
+  <url><loc>https://lsr-hub-portal.vercel.app/tools/age-calculator.html</loc></url>
+  <url><loc>https://lsr-hub-portal.vercel.app/tools/bmi-calculator.html</loc></url>
+  <url><loc>https://lsr-hub-portal.vercel.app/tools/case-converter.html</loc></url>
+  <url><loc>https://lsr-hub-portal.vercel.app/tools/color-picker.html</loc></url>
+  <url><loc>https://lsr-hub-portal.vercel.app/tools/image-compressor.html</loc></url>
+  <url><loc>https://lsr-hub-portal.vercel.app/tools/image-to-pdf.html</loc></url>
+  <url><loc>https://lsr-hub-portal.vercel.app/tools/json-formatter.html</loc></url>
+  <url><loc>https://lsr-hub-portal.vercel.app/tools/password-generator.html</loc></url>
+  <url><loc>https://lsr-hub-portal.vercel.app/tools/qr-generator.html</loc></url>
+  <url><loc>https://lsr-hub-portal.vercel.app/tools/unit-converter.html</loc></url>
+  <url><loc>https://lsr-hub-portal.vercel.app/tools/url-encoder.html</loc></url>
+  <url><loc>https://lsr-hub-portal.vercel.app/tools/word-counter.html</loc></url>
+  <url><loc>https://lsr-hub-portal.vercel.app/tools/word-to-pdf.html</loc></url>
+  <url><loc>https://lsr-hub-portal.vercel.app/tools/pdf-to-word.html</loc></url>
+  <url><loc>https://lsr-hub-portal.vercel.app/tools/pdf-merge.html</loc></url>
+  <url><loc>https://lsr-hub-portal.vercel.app/tools/pdf-split.html</loc></url>
+  <url><loc>https://lsr-hub-portal.vercel.app/guides/image-size.html</loc></url>
+  <url><loc>https://lsr-hub-portal.vercel.app/guides/password-safety.html</loc></url>
+  <url><loc>https://lsr-hub-portal.vercel.app/guides/productivity.html</loc></url>
+</urlset>

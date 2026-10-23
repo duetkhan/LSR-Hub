@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lsr-hub-portal.vercel.app/sitemap.xml
