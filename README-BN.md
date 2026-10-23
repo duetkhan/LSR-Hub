@@ -25,3 +25,9 @@
 
 ## নোট
 এই প্রজেক্টে কোনো Adsterra account, live ad code, approval, analytics, backend বা guaranteed earnings অন্তর্ভুক্ত নেই। Genuine traffic তৈরি করুন; bot/incentivized clicks বা accidental clicks কখনো ব্যবহার করবেন না।
+
+
+## বিজ্ঞাপন সংযুক্তি
+- বিজ্ঞাপন কোডগুলো `assets/js/ads.js` থেকে পরিচালিত হয়; স্টাইল `assets/css/style.css`-এ।
+- Smartlink স্পষ্টভাবে “Explore sponsored offers” হিসেবে দেখানো হয়; টুল ব্যবহারের জন্য ক্লিক বাধ্যতামূলক নয়।
+- লাইভ করার পর মোবাইল/ডেস্কটপে প্রতিটি ad unit এবং provider dashboard-এ impression যাচাই করুন। নেটওয়ার্কের policy অনুযায়ী প্রয়োজন হলে popunder/social bar বন্ধ করুন।
