@@ -1,1 +1,0 @@
-# Add the exact ads.txt record supplied by your advertising network after account setup.
