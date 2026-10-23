@@ -1,179 +1,174 @@
- <!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
-<style>
-/* LSR Hub — targeted tools page repair */
-.page-hero h1 {
-  color: #172b4e !important;
-  font-family: Inter, "Segoe UI", Arial, sans-serif !important;
-  font-size: clamp(32px, 5vw, 48px) !important;
-  font-weight: 800 !important;
-  line-height: 1.15 !important;
-  letter-spacing: -1.2px !important;
-  text-shadow: none !important;
-}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f8ff">
+  <meta name="description" content="Browse free online image, PDF, text, developer, design and calculator tools at LSR Hub.">
+  <title>All Online Tools — LSR Hub</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 
-.page-hero p {
-  color: #5d6d85 !important;
-  font-family: Inter, "Segoe UI", Arial, sans-serif !important;
-  font-size: 16px !important;
-  line-height: 1.75 !important;
-}
+  <style>
+    :root {
+      --blue: #2563eb;
+      --blue-dark: #1747b8;
+      --text: #101828;
+      --muted: #667085;
+      --border: #e5eaf3;
+      --surface: #ffffff;
+      --background: #f5f8ff;
+    }
 
-.breadcrumbs {
-  color: #71819a !important;
-}
+    body {
+      color: var(--text);
+      background: var(--background);
+    }
 
-.content-wrap {
-  max-width: 1180px;
-  margin-inline: auto;
-  padding: 28px 20px 56px;
-}
+    .header {
+      background: rgba(255,255,255,.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
 
-.filterbar {
-  display: flex !important;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  padding: 14px !important;
-  margin-bottom: 24px;
-  background: #fff !important;
-  border: 1px solid #e0e8f4 !important;
-  border-radius: 16px !important;
-  box-shadow: 0 8px 24px rgba(23, 43, 78, .05);
-}
+    .page-hero {
+      background:
+        radial-gradient(ellipse at 85% 10%, rgba(96,165,250,.17), transparent 40%),
+        linear-gradient(180deg, #fff, var(--background));
+    }
 
-.filterbar input,
-.filterbar select {
-  box-sizing: border-box;
-  min-width: 0;
-  min-height: 48px;
-  padding: 12px 14px;
-  color: #172b4e !important;
-  background: #fff !important;
-  border: 1px solid #d7e1ef !important;
-  border-radius: 11px !important;
-  font: 15px/1.4 Inter, "Segoe UI", Arial, sans-serif !important;
-}
+    .page-hero h1 {
+      letter-spacing: -1.3px;
+      line-height: 1.15;
+    }
 
-.filterbar input {
-  display: block !important;
-  flex: 1 1 240px;
-  width: auto;
-}
+    .page-hero p {
+      color: var(--muted);
+      line-height: 1.8;
+    }
 
-.filterbar select {
-  display: block !important;
-  flex: 0 1 230px;
-  width: auto;
-}
+    .content-wrap {
+      padding-top: 28px;
+    }
 
-.filterbar input:focus,
-.filterbar select:focus {
-  outline: 3px solid rgba(37, 99, 235, .15);
-  border-color: #2563eb !important;
-}
+    .filterbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 16px;
+      margin-bottom: 26px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 8px 28px rgba(31,65,114,.05);
+    }
 
-.tool-grid {
-  gap: 18px !important;
-}
+    .filterbar input,
+    .filterbar select {
+      box-sizing: border-box;
+      min-width: 0;
+      min-height: 48px;
+      padding: 12px 14px;
+      color: var(--text);
+      background: #fff;
+      border: 1px solid #dce5f5;
+      border-radius: 12px;
+      font: inherit;
+      outline: none;
+    }
 
-.tool-card {
-  box-sizing: border-box;
-  min-width: 0;
-  padding: 24px !important;
-  background: #fff !important;
-  border: 1px solid #e1e8f2 !important;
-  border-radius: 18px !important;
-  box-shadow: 0 5px 18px rgba(23, 43, 78, .035);
-  text-decoration: none;
-  transition: border-color .2s ease, box-shadow .2s ease,
-              transform .2s ease;
-}
+    .filterbar input {
+      flex: 1 1 240px;
+    }
 
-.tool-card:hover {
-  transform: translateY(-3px);
-  border-color: #b9d0ff !important;
-  box-shadow: 0 12px 28px rgba(37, 99, 235, .09);
-}
+    .filterbar select {
+      flex: 0 1 220px;
+    }
 
-.tool-card h3 {
-  color: #172b4e !important;
-  font-family: Inter, "Segoe UI", Arial, sans-serif !important;
-  font-size: 20px !important;
-  font-weight: 750 !important;
-  line-height: 1.35;
-}
+    .filterbar input:focus,
+    .filterbar select:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(37,99,235,.1);
+    }
 
-.tool-card p {
-  color: #66758c !important;
-  font-family: Inter, "Segoe UI", Arial, sans-serif !important;
-  font-size: 14px !important;
-  line-height: 1.65 !important;
-}
+    .tool-card {
+      min-width: 0;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      transition: transform .2s ease, box-shadow .2s ease,
+                  border-color .2s ease;
+    }
 
-.tool-card .tag {
-  color: #3869d8 !important;
-  font-family: Inter, "Segoe UI", Arial, sans-serif !important;
-  font-size: 11px !important;
-  font-weight: 800 !important;
-  letter-spacing: 1px;
-}
+    .tool-card:hover {
+      transform: translateY(-4px);
+      border-color: #b9d0ff;
+      box-shadow: 0 14px 34px rgba(35,76,145,.09);
+    }
 
-.tool-card .card-link {
-  color: #2563eb !important;
-  font-weight: 700;
-}
+    .tool-card h3 {
+      letter-spacing: -.3px;
+    }
 
-.tool-icon {
-  display: grid;
-  place-items: center;
-  width: 54px;
-  height: 54px;
-  min-width: 54px;
-  margin-bottom: 14px;
-  border-radius: 14px !important;
-  background: #eaf1ff !important;
-  color: #2563eb !important;
-  font-family: Inter, "Segoe UI", Arial, sans-serif !important;
-  font-size: 23px !important;
-  font-weight: 800;
-}
+    .tool-card p {
+      color: var(--muted);
+      line-height: 1.7;
+    }
 
-.tool-card[hidden] {
-  display: none !important;
-}
+    .tool-icon {
+      border-radius: 14px;
+    }
 
-.empty-state {
-  padding: 24px;
-  color: #66758c;
-  text-align: center;
-  background: #fff;
-  border: 1px dashed #d7e1ef;
-  border-radius: 14px;
-}
+    .tag {
+      color: var(--blue);
+      font-weight: 700;
+      letter-spacing: .6px;
+    }
 
-@media (max-width: 600px) {
-  .content-wrap {
-    padding: 20px 16px 40px;
-  }
+    .card-link {
+      color: var(--blue);
+    }
 
-  .filterbar {
-    gap: 10px;
-    padding: 12px !important;
-  }
+    .empty-state {
+      display: none;
+      padding: 28px 16px;
+      text-align: center;
+      color: var(--muted);
+      background: #fff;
+      border: 1px dashed #cbd5e1;
+      border-radius: 16px;
+    }
 
-  .filterbar input,
-  .filterbar select {
-    flex: 1 1 100%;
-    width: 100%;
-  }
+    .ad-slot {
+      margin-top: 28px;
+      min-height: 0;
+    }
 
-  .tool-card {
-    padding: 20px !important;
-  }
-}
-</style>      
+    @media (max-width: 600px) {
+      .page-hero h1 {
+        letter-spacing: -.6px;
+      }
+
+      .filterbar {
+        padding: 12px;
+        gap: 10px;
+      }
+
+      .filterbar input,
+      .filterbar select {
+        flex: 1 1 100%;
+        width: 100%;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
+      }
+    }
+  </style>
 </head>
 
 <body>
